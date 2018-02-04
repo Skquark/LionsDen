@@ -1,15 +1,24 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.agameoftwohalves.app" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="com.skquark.app" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     
     <name>Lion's Den Cannabis</name>
     <description>Delivering Recreational Cannabis Products to Los Angeles Area</description>
     <author email="alanb@techie.com" href="http://www.skquark.com">Alan Bedian - Skquark, Inc.</author>
 
-    <preference name="phonegap-version" value="3.3.0" />
+    <preference name="phonegap-version" value="cli-6.0.0" />
     <feature name="http://api.phonegap.com/1.0/device" />
     
     <preference name="orientation"                value="portrait" />       <!-- all: default means both landscape and portrait are enabled -->
-    
+	<plugin name="cordova-plugin-device" />
+	<plugin name="cordova-plugin-file" />
+	<plugin name="cordova-plugin-file-transfer" />
+	<plugin name="cordova-plugin-media" />
+	
+	<plugin name="cordova-plugin-dialogs" />
+	<plugin name="cordova-plugin-statusbar" />
+	<plugin name="cordova-plugin-splashscreen" />
+	<plugin name="cordova-plugin-network-information" />
+	
     <gap:plugin name="org.apache.cordova.device" />
     <gap:plugin name="org.apache.cordova.camera" />
     <gap:plugin name="org.apache.cordova.media-capture" />
