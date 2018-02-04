@@ -5,10 +5,11 @@
     <description>Delivering Recreational Cannabis Products to Los Angeles Area</description>
     <author email="alanb@techie.com" href="http://www.skquark.com">Alan Bedian - Skquark, Inc.</author>
 
-    <preference name="phonegap-version" value="cli-6.5.0" />
+    <preference name="phonegap-version" value="cli-8.0.0" />
     <feature name="http://api.phonegap.com/1.0/device" />
     
-    <preference name="orientation"                value="all" />       <!-- all: default means both landscape and portrait are enabled -->
+    <preference name="orientation" value="default" />       <!-- all: default means both landscape and portrait are enabled -->
+	<preference name="target-device" value="universal" />
 	<plugin name="cordova-plugin-device" />
 	<plugin name="cordova-plugin-file" />
 	<plugin name="cordova-plugin-media" />
@@ -34,15 +35,18 @@
 	
     <gap:splash src="splash.png" />
     
-    <gap:splash src="res/screen/android/drawable-ldpi/splash.png"  gap:platform="android" gap:density="ldpi" />
-    <gap:splash src="res/screen/android/drawable-mdpi/splash.png"  gap:platform="android" gap:density="mdpi" />
-    <gap:splash src="res/screen/android/drawable-hdpi/splash.png"  gap:platform="android" gap:density="hdpi" />
-    <gap:splash src="res/screen/android/drawable-xdpi/splash.png" gap:platform="android" gap:density="xhdpi" />
-    
+    <gap:splash src="res/screen/android/drawable-ldpi/splash.png"       gap:platform="android" gap:qualifier="port-ldpi" />
+    <gap:splash src="res/screen/android/drawable-mdpi/splash.png"       gap:platform="android" gap:qualifier="port-mdpi" />
+    <gap:splash src="res/screen/android/drawable-hdpi/splash.png"       gap:platform="android" gap:qualifier="port-hdpi" />
+    <gap:splash src="res/screen/android/drawable-xdpi/splash.png"      gap:platform="android" gap:qualifier="port-xhdpi" />
+    <gap:splash src="res/screen/android/drawable-mdpi/splash.png"              gap:platform="blackberry" />
+	
     <gap:splash src="res/screen/ios/Default.png" gap:platform="ios" width="320" height="480" />
     <gap:splash src="res/screen/ios/Default@2x.png" gap:platform="ios" width="680" height="960" />
     <gap:splash src="res/screen/ios/Deafult-568h-2x.png" gap:platform="ios" width="640" height="1136" />
 
+
+<gap:splash src="res/screen/windows-phone/screen-portrait.jpg" gap:platform="winphone" />
     <content src="http://www.lionsdencannabis.com" />
     <access origin="*" subdomains="true" />
 </widget>
